@@ -1,0 +1,40 @@
+<html>
+  <head>
+    <title>Single-line Flexbox Margin</title>
+    <link href="setup.css" rel="stylesheet"/>
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+     .parent {
+       display: flex;
+       flex-direction: column;
+     }
+     .child {
+       width: 100%;
+     }
+     .child + .child {
+       margin-top: 12px;
+     }
+     @media screen and (min-width: 321px) {
+       .parent {
+         flex-direction: row;
+       }
+       .child + .child {
+         margin-top: 0;
+         margin-left: 12px;
+       }
+     }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="title">Multi-line responsive</div>
+      <a href="index.html" class="back">⬅</a>
+      <div class="parent">
+        <div class="child"></div>
+        <div class="child"></div>
+      </div>
+    </div>
+  </body>
+</html>

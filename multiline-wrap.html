@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <title>Single-line Flexbox Margin</title>
+    <link href="setup.css" rel="stylesheet"/>
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+     .parent {
+       display: flex;
+       flex-wrap: wrap;
+       margin: -6px -6px;
+     }
+     .child {
+       margin: 6px;
+     }
+     .child--1 {
+       width: calc(50% - 12px);
+     }
+     .child--2 {
+       width: calc(100% - 12px);
+     }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="title">Multi-line wrapping</div>
+      <a href="index.html" class="back">⬅</a>
+      <div class="parent">
+        <div class="child child--1"></div>
+        <div class="child child--1"></div>
+        <div class="child child--2"></div>
+        <div class="child child--1"></div>
+        <div class="child child--1"></div>
+      </div>
+    </div>
+  </body>
+</html>

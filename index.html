@@ -1,0 +1,46 @@
+<html>
+  <head>
+    <title>Single-line Flexbox Margin</title>
+    <link href="setup.css" rel="stylesheet"/>
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+     .parent {
+       display: flex;
+       flex-direction: column;
+     }
+     .child {
+       width: 100%;
+     }
+     .child a {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       color: #000;
+       font-size: 22px;
+       height: 100%;
+       width: 100%;
+       line-height: 100%;
+       transition: all 400ms;
+     }
+     .child a:hover,
+     .child a:active {
+       font-weight: 600;
+     }
+     .child + .child {
+       margin-top: 12px;
+     }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="title">Flexbox spacing demos</div>
+      <div class="parent">
+        <div class="child"><a href="single-line.html">Single line</a></div>
+        <div class="child"><a href="multiline-responsive.html">Responsive</a></div>
+        <div class="child"><a href="multiline-wrap.html">Wrap</a></div>
+      </div>
+    </div>
+  </body>
+</html>
